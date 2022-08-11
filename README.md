@@ -1,5 +1,7 @@
 # Social proof section
 
+[documentation en Ingles](README-us.md)
+
 ## introduccion
 
 ### Tecnologias utilizadas
