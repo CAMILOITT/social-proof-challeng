@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*  ------------------- Colors --------------------- */
+  /* ### Primary */
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  /* ### Neutral */
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  /* -------------------- Typography -------------------- */
+  /* ### Body Copy */
+  --Font-Size: 15px;
+
+  /* ### Font */
+  --fontGeneral: 'League Spartan', sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontGeneral);
+  position: relative;
+}
+/*-------------------- contenedor --------------------*/
+.container {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+/*------------------- introduccion -------------------*/
+.container__introduction {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.introduction__information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* titulo */
+.information__title {
+  max-width: 400px;
+  font-size: 3rem;
+  color: var(--VeryDarkMagenta);
+  margin-bottom: 20px;
+}
+/* parrafos */
+.information__paragraph {
+  line-height: 20px;
+  color: var(--DarkGrayishMagenta);
+}
+/*---------------------- ranking ----------------------*/
+.introduction__rank {
+  width: 50%;
+  color: var(--VeryDarkMagenta);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+/* contenedor estrellas y nombre */
+.rank__container {
+  background-color: var(--LightGrayishMagenta);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.rank__container--reviews {
+  align-self: flex-start;
+}
+.rank__container--report {
+  align-self: center;
+}
+.rank__container--bestTech {
+  align-self: flex-end;
+}
+/* estrellas */
+.container__stars {
+  min-width: 105px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+/*--------------------- personas ---------------------*/
+.container__client {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* cada cuadro */
+.client__information {
+  min-width: 257px;
+  width: 30%;
+  background-color: var(--VeryDarkMagenta);
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: var(--White);
+  line-height: 20px;
+}
+/* segundo cuadro */
+.client__information--center {
+  align-self: center;
+}
+/* tercer cuadro */
+.client__information--bottom {
+  align-self: flex-end;
+}
+/* texto de la derecha de la imagen */
+.information__perfil {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* foto de la persona */
+.perfil__img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 20px;
+}
+/* cambiar de color el texto de abajo */
+.name_verification {
+  color: var(--SoftPink);
+}
+@media screen and (max-width: 880px) {
+  /* documento */
+  body {
+    width: auto;
+    height: auto;
+  }
+  /* contenedor */
+  .container {
+    padding: 100px 0px;
+  }
+  /*------------------- introduccion -------------------*/
+  .container__introduction {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .introduction__information {
+    width: 100%;
+  }
+  /*--------------------- ranking ---------------------*/
+  .introduction__rank {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .rank__container {
+    width: 100%;
+    align-self: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+  /* estrellas */
+  .container__stars {
+    margin-bottom: 10px;
+  }
+  /*--------------------- personas ---------------------*/
+  .container__client {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  /* cada cuadro */
+  .client__information {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
