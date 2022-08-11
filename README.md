@@ -1,19 +1,21 @@
 # Social proof section
 
-# introduccion
+## introduccion
 
-# Diseño para pantallas de computadoras
+### Tecnologias utilizadas
+
+### Diseño para pantallas de computadoras
 
 ![Diseño para computadoras](design/desktop-design.jpg)
 
-# Diseño para pantallas de computadoras
+### Diseño para pantallas de computadoras
 
 ![Diseño para computadoras al poner el mouse](design/desktop-design.jpg)
 
-# Diseño para celulares
+### Diseño para celulares
 
 ![Diseño para celulares](design/mobile-design.jpg)
 
-# Redes Sociales
+### Redes Sociales
 
 - Instagram
